@@ -1,2 +1,66 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using DecimalConverter;
+using System;
+
+namespace Main
+{
+    public static class ConsoleCalc
+    {
+        public static void Calc()
+        {
+            //Začetni zapis za zaagon in uporabo
+            Console.WriteLine("Napiši funkcijo");
+            Console.WriteLine("+ = 1");
+            Console.WriteLine("- = 2");
+            Console.WriteLine("* = 3");
+            Console.WriteLine("|| = 4");
+            Console.WriteLine("Ulomek = 5");
+            Console.WriteLine("Evklidov Algoritem = 6");
+            Console.WriteLine("Koren naravnega števila = 7");
+
+            //Input uporabnik in preverjanje
+            string x = Console.ReadLine();
+
+            if (x == "1")
+            {
+                double sestevek = MatematicalFunctions.BasicFunctions.Program.Plus();
+                Console.WriteLine("Sestevek je {0}", sestevek);
+            }
+
+            if (x == "2")
+            {
+                double razlika = MatematicalFunctions.BasicFunctions.Program.Minus();
+                Console.WriteLine("Razlika je {0}", razlika);
+            }
+
+            if (x == "3")
+            {
+                double zmnozek = MatematicalFunctions.BasicFunctions.Program.Krat();
+                Console.WriteLine("Zmnozek je {0}", zmnozek);
+            }
+
+            if (x == "4")
+            {
+                double kolicnik = MatematicalFunctions.BasicFunctions.Program.Deljenje();
+                Console.WriteLine("Kolicnik je {0}", kolicnik);
+            }
+
+            if (x == "5")
+            {
+                double Absolut = Main.Uporaba.Main();
+                Console.WriteLine("Absolutna vrednost te številke je {0}", Absolut);
+            }
+
+            if (x == "6")
+            {
+                int nsd = EvklidovAlgoritem.Program.Main();
+                Console.WriteLine("Največji skupni delitelj je {0}", nsd);
+            }
+
+            if (x == "7")
+            {
+                long korenjenoStevilo = KvadratniKorenjenec.Program.Main();
+                Console.WriteLine("Korenjenec števila je {0}", korenjenoStevilo);
+            }
+        }
+    }
+}

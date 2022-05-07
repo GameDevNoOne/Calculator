@@ -3,8 +3,7 @@ using Matematika;
 
 namespace DecimalConverter
 {
-    public static
-     class DecimalToUlomek
+    public static class DecimalToUlomek
     {
         public static Ulomek DecimalnoStevilo(double x, int decimalke)
         {

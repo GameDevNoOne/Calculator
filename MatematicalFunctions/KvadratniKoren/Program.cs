@@ -2,9 +2,9 @@
 
 namespace KvadratniKorenjenec
 {
-	static class Program
+	public static class Program
 	{
-		static void Main(string[] args)
+		public static long Main()
 		{
 			Console.WriteLine("Type the square root you are trying to get");
 			long korenjenec = Int64.Parse(Console.ReadLine());
@@ -12,9 +12,8 @@ namespace KvadratniKorenjenec
 			if (korenjenoStevilo == null)
 			{
 				Console.WriteLine("Korenjenec {0} nima celega korena", korenjenec);
-				return;
 			}
-			Console.WriteLine("Koren števila {0} je {1}", korenjenec, korenjenoStevilo);
+			return korenjenoStevilo.Value;
 		}
 	}
 }
