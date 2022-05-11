@@ -5,40 +5,37 @@ namespace Main
 {
     public static class ConsoleCalc
     {
-        public static void Calc()
+        public static void Main()
         {
             //Začetni zapis za zaagon in uporabo
             Console.WriteLine("Napiši funkcijo");
-            Console.WriteLine("+ = 1");
-            Console.WriteLine("- = 2");
-            Console.WriteLine("* = 3");
-            Console.WriteLine("|| = 4");
-            Console.WriteLine("Ulomek = 5");
+            Console.WriteLine("Poleg osnovnih funkcij kot so plus, minus, krat in množenje so tudi:");
+            Console.WriteLine("Absolutna funkcija = 5");
             Console.WriteLine("Evklidov Algoritem = 6");
             Console.WriteLine("Koren naravnega števila = 7");
 
             //Input uporabnik in preverjanje
             string x = Console.ReadLine();
 
-            if (x == "1")
+            if (x == "+")
             {
                 double sestevek = MatematicalFunctions.BasicFunctions.Program.Plus();
                 Console.WriteLine("Sestevek je {0}", sestevek);
             }
 
-            if (x == "2")
+            if (x == "-")
             {
                 double razlika = MatematicalFunctions.BasicFunctions.Program.Minus();
                 Console.WriteLine("Razlika je {0}", razlika);
             }
 
-            if (x == "3")
+            if (x == "*")
             {
                 double zmnozek = MatematicalFunctions.BasicFunctions.Program.Krat();
                 Console.WriteLine("Zmnozek je {0}", zmnozek);
             }
 
-            if (x == "4")
+            if (x == "/")
             {
                 double kolicnik = MatematicalFunctions.BasicFunctions.Program.Deljenje();
                 Console.WriteLine("Kolicnik je {0}", kolicnik);
@@ -46,7 +43,7 @@ namespace Main
 
             if (x == "5")
             {
-                double Absolut = Main.Uporaba.Main();
+                double Absolut = MatematicalFunctions.BasicFunctions.Program.AbsolutnaFunkcija();
                 Console.WriteLine("Absolutna vrednost te številke je {0}", Absolut);
             }
 

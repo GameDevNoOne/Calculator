@@ -13,7 +13,9 @@ namespace EuclidsAlgorithm{
                 int ostanek =  x - (kvocient * y);
                 int Q = (kvocient * y) + ostanek;
                 x = y;
+                Console.WriteLine(x);
                 y = ostanek;
+                Console.WriteLine(y);
 
                 //Curly Brackets ti pomagajo sami convertat iz int v string
                 Console.WriteLine("X je enako {0}, Y je enako {1}",x, y);
@@ -27,6 +29,8 @@ namespace EuclidsAlgorithm{
                 return x;
             }
             int ostanek = x - ((x/y) * y);
+            Console.WriteLine(y);
+            Console.WriteLine(x);
             return NSDRecursive(y, ostanek);
         }
     }

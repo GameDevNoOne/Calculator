@@ -55,5 +55,14 @@ namespace MatematicalFunctions.BasicFunctions
             double kolicnik = BasicFunction.Division(prvo, drugo);
             return kolicnik;
         }
+
+        public static double AbsolutnaFunkcija()
+        {
+            Console.WriteLine("Napiši številko:");
+            double s = Int64.Parse(Console.ReadLine());
+
+            double absolut = Matematika.Funkcije.Abs(s);
+            return absolut;
+        }
     }
 }
