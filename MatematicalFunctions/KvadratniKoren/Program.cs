@@ -14,6 +14,8 @@ namespace KvadratniKorenjenec
 				Console.WriteLine("Korenjenec {0} nima celega korena", korenjenec);
 			}
 			return korenjenoStevilo.Value;
+			
+			
 		}
 	}
 }

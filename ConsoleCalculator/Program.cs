@@ -55,7 +55,7 @@ namespace Main
 
             if (x == "7")
             {
-                long korenjenoStevilo = KvadratniKorenjenec.Program.Main();
+                long? korenjenoStevilo = KvadratniKorenjenec.Program.Main();
                 Console.WriteLine("Korenjenec števila je {0}", korenjenoStevilo);
             }
         }
