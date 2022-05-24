@@ -15,7 +15,7 @@ namespace Main
             Console.WriteLine("Koren naravnega števila = 7");
 
             //Input uporabnik in preverjanje
-            string x = Console.ReadLine();
+            string? x = Console.ReadLine();
 
             if (x == "+")
             {
@@ -57,6 +57,11 @@ namespace Main
             {
                 long? korenjenoStevilo = KvadratniKorenjenec.Program.Main();
                 Console.WriteLine("Korenjenec števila je {0}", korenjenoStevilo);
+            }
+
+            if (x == null)
+            {
+                return;
             }
         }
     }
