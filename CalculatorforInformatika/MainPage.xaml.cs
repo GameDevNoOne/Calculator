@@ -26,7 +26,6 @@ public partial class MainPage : ContentPage
 
 		int x = Int32.Parse(Text);
 		int y = Int32.Parse(Text);
-
 		int nsd = EuclidsAlgorithm.EvklidovAlgoritem.NSDRecursive(x, y);
     }
 
